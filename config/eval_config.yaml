@@ -1,0 +1,5 @@
+eval:
+  version: v1.0.0
+  sample_dt: 0.1
+  thresholds:
+    collision_distance: 0.5

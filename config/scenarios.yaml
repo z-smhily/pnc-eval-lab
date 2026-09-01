@@ -1,0 +1,10 @@
+scenarios:
+  - name: urban_cutin
+    desc: 城区加塞
+    duration_s: 20
+  - name: highway_follow
+    desc: 高速跟车
+    duration_s: 30
+  - name: intersection_left
+    desc: 无保护左转
+    duration_s: 25
