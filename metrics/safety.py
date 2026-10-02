@@ -20,4 +20,7 @@ def check_collision(ego_traj, obstacles, threshold=0.5):
 
 def compute_ttc(ego_speed, lead_speed, gap):
     """计算碰撞时间 TTC = 间距 / 速度差。"""
-    return gap / (ego_speed - lead_speed)
+    closing = ego_speed - lead_speed
+    if closing <= 0:
+        return float("inf")  # 前车更快，无追尾风险
+    return gap / closing
